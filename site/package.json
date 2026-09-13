@@ -1,0 +1,40 @@
+{
+  "name": "dskong07-site",
+  "private": true,
+  "version": "2.0.0",
+  "type": "module",
+  "scripts": {
+    "predev": "node scripts/build-particle-data.mjs",
+    "dev": "vite",
+    "prebuild": "node scripts/build-particle-data.mjs",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit",
+    "data": "node scripts/build-particle-data.mjs",
+    "images": "node scripts/build-images.mjs",
+    "og": "node scripts/build-og.mjs",
+    "shots": "node scripts/shots.mjs"
+  },
+  "dependencies": {
+    "@fontsource-variable/inter-tight": "^5.3.0",
+    "@fontsource-variable/jetbrains-mono": "^5.3.0",
+    "gsap": "^3.12.5",
+    "lenis": "^1.1.18",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.28.0",
+    "three": "0.136.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@types/three": "0.136.0",
+    "@vitejs/plugin-react": "^4.3.4",
+    "puppeteer-core": "^23.11.1",
+    "sharp": "^0.33.5",
+    "topojson-client": "^3.1.0",
+    "typescript": "^5.6.3",
+    "us-atlas": "^3.0.1",
+    "vite": "^5.4.11"
+  }
+}
